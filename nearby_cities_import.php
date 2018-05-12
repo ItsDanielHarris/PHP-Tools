@@ -7,20 +7,22 @@
 error_reporting(0);
 ini_set('memory_limit','-1');
 require 'simple_html_dom.php';
-$cities = ["Maitland"];
-/*$file = fopen("markets.txt","r");
+
+$cities = [];
+$file = fopen("markets.txt","r");
 while (($data = fgetcsv($file)) !== FALSE) {
     foreach($data as $d) {
         $cities[] = str_replace(" ", "-", $d);
     }
-}*/
-$cities2 = ["Maitland"];
-/*$file = fopen("markets.txt","r");
+}
+
+$cities2 = [];
+$file = fopen("markets.txt","r");
 while (($data = fgetcsv($file)) !== FALSE) {
     foreach($data as $d) {
         $cities2[] = $d;
     }
-}*/
+}
 
 $mysqli = mysqli_connect("localhost", "", "", "");
 
